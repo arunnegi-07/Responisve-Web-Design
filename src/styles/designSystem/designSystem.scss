@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+// media breakpoints
+$mobile : 576px;
+$tablet : 768px;
+$laptop : 1024px;
+$desktop : 1200px;
+$large : 1920px;
+
+// headings and font sizes
+$h1 : 40px;
+$h2 : 32px;
+$h3 : 28px;
+$h4 : 24px;
+$h5 : 20px;
+$h6 : 16px;
+
+$sub-heading : 20px;
+
+$label : 16px;
+$ls : 5px;
+
+$body : 14px;
+
+// font families
+
+$font-1: 'Crimson Text', serif;
+$font-2: 'Work Sans', sans-serif;
+
+// All color schemes
+
+$color-dark-100 : rgba(41, 33, 33, 1);
+$color-dark-75 : rgba(41, 33, 33, 0.75);
+$color-dark-50 : rgba(41, 33, 33, 0.50);
+$color-dark-25 : rgba(41, 33, 33, 0.25);
+
+$color-white-100 : rgba(255, 255, 255, 1);
+$color-white-75 : rgba(255, 255, 255, 0.75);
+$color-white-50 : rgba(255, 255, 255, 0.50);
+$color-white-25 : rgba(255, 255, 255, 0.25);
+
+$color-green-100 : rgba(116, 198, 157, 1);        
+$color-green-75 : rgba(116,198, 157, 0.75);
+$color-green-50 : rgba(116,198, 157, 0.50);
+$color-green-25 : rgba(116,198, 157, 0.25);
+
+$color-blue-100 : rgba(126, 214, 223, 1);        
+$color-blue-75 : rgba(126, 214, 223, 0.75);
+$color-blue-50 : rgba(126, 214, 223, 0.50);
+$color-blue-25 : rgba(126, 214, 223, 0.25);
+
+
+// shadow style
+$shadow-1 : 3px 4px 12px 1px rgba(0,0,0,0.25); 
+
+
+// Style rules for common buttons
+.white-btn, .dark-btn{
+    border: none;
+    cursor: pointer;
+    font-size: $h5;
+    font-family: $font-2;
+    background-color: $color-white-100;
+    color: $color-dark-100;
+    border-radius: 8px;
+    padding: 10px 40px;
+
+    transform: scale(1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover{
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+}
+
+.dark-btn{
+    background-color: $color-dark-100;
+    color: $color-white-100;
+}
+
+
+// Style rules for text colors
+.text-white{
+    color: $color-white-100;
+}
+
+.text-dark{
+    color: $color-dark-100;
+}
+
+.text-blue{
+    color: $color-blue-100;
+}
+
+
+// Style rules for label
+.label{
+    font-family: $font-2;
+    font-size: $label;
+    letter-spacing: $ls;
+    text-transform: uppercase;;
+    font-weight: 700;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// removing default styles of the browser
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Style rules for hero
+.hero{
+    background-color: $color-blue-100;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+
+    .hero{
+        align-self: start;
+    }
+
+    .footerWrapper{
+        align-self: end;
+    }
+}
+
+
+// styles rules for navbar
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 30px 0;
+
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    
+        &--text{
+            font-size: $h2;
+            font-family: $font-2;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-family: $font-2;
+        font-size: $h5;
+
+        [class ^= "navbar__menu--"]{
+            color: $color-white-100;
+            text-decoration: none;
+        }
+    }
+
+    &__icons {
+        display: none;   
+        
+        &  i{
+            font-size: $h2;
+            color: $color-white-100;
+        }
+    }
+}
+
+// style rules for common classes
+.container{
+    max-width: 1700px;
+    margin: auto;
+}
+
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.common-title{
+    text-transform: capitalize;
+    font-size: $h1;
+    font-weight: bold;
+    font-family: $font-1;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat((2,1fr));
+    place-items: center;
+    gap: 25px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+// Common class of footer section
+.footerLinks{
+    padding: 40px 0;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__copyright{
+        color: $color-white-100;
+        font-size: $sub-heading;
+        font-family: $font-2;
+    }
+    
+    &__socials{
+       display: flex;
+       gap: 10px;
+    }
+}
+
+// Common media queries
+
+@media (max-width : $large){
+    .container{
+        max-width: 1160px;
+    }
+}
+
+@media (max-width : $desktop){
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width : $laptop){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width : $tablet){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container{
+        max-width: 530px;
+    }
+    
+    .navbar__menu{
+        z-index: 1;
+        position: absolute;
+        top: 100px;
+        background-color: $color-blue-100;
+        width: 100%;
+        left: 0;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap : 40px;
+
+        &--1{
+            margin-top : -200px;
+        }
+    }
+
+    .navbar__icons{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .hidden{
+        z-index: -1;
+        opacity : 0%;
+    }
+
+    .footerLinks{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .white-btn, .dark-btn{
+        font-size: $h6;
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width : $mobile){
+    .container{
+        max-width: 90%;
+    }
+}
+
