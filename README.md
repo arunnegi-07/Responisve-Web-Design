@@ -1,10 +1,10 @@
 # Responsive Webiste Using HTML, SCSS and JS
-This responsive website is a part of a video lecture series by 'Joy Saheb', an educational YouTuber. It serves as a repository containing my learning journey, showcasing a delightful and fully responsive website crafted with HTML, SCSS, and JS.
+This responsive website is a part of a video lecture series by 'Joy Shaheb', an educational YouTuber. It serves as a repository containing my learning journey, showcasing a delightful and fully responsive website crafted with HTML, SCSS, and JS.
 
 ### Getting Started:<br>
 Follow these instructions to get a copy of the project up and running on your local machine.
 
-**1.** On this Github Repository "**Responisve-Web-Design**" click on "**Code**" and then download the "**Zip file**".<br><br>
+**1.** On this Github Repository "**Responsive-Web-Design**" click on "**Code**" and then download the "**Zip file**".<br><br>
 
 <img src="https://i.ibb.co/mhZKNpf/click-Code.png" alt="instructions-to-download-repository-files" border="0">
 <br><br>
@@ -19,8 +19,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 <br><br>
 
 **4.** Now, on your VS Code window at the bottom right corner you will get the option as **'Watch Sass'** on clicking that the given
-    **scss** files in the project will get converted to **css** and now in every styles folder you will get 2 extra files one of which will 
-    be a **.css** file.
+    **scss** files in the project will get converted to **css** and now in every styles folder you will get 2 extra files one of which is 
+    **.css** file which I have already included in the project.
    
 <img src="https://i.ibb.co/hKyRNRs/watch-sass.png" alt="Watch-Sass-VS-Code" border="0">
 <br><br>
