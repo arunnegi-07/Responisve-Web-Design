@@ -29,7 +29,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 <br><br>
 
 ### Acknowledgments:<br>
-This project was inspired by the web development tutorials by <a href="https://www.youtube.com/@JoyShaheb">Joy Shaheb</a>.
+This project was inspired by the web development tutorials by <a href="https://www.youtube.com/@JoyShaheb" target="_blank">Joy Shaheb</a>.
 <br><br>
 
 ### How Webiste looks like:
@@ -41,4 +41,4 @@ This project was inspired by the web development tutorials by <a href="https://w
     <img src="https://i.ibb.co/sH4y29p/Small-screens.png" alt="Small-screen-view" border="1px solid black;">
 </p>
 
-- [See Website live 🚀](https://arunnegi-07.github.io/Responisve-Web-Design/)
+- [See Website live 🚀](https://arunnegi-07.github.io/Responisve-Web-Design/){:target="_blank"}
