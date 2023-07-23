@@ -1,0 +1,106 @@
+@import '../designSystem/designSystem.scss';
+
+// Style rules for section one 
+.sectionOne{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    gap: 35px;
+
+    &__content--text{
+        font-size: $sub-heading;
+        font-family: $font-2;
+    }
+    
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        font-family: $font-2;
+
+        [class ^= "sectionOne__cards--"]{
+            padding: 40px;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(1,1fr);
+            box-shadow: $shadow-1;
+            border-radius: 6px;
+
+            transform: scale(1);
+            transition: transform 0.2s ease;
+    
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        [class ^= "sectionOne__cards--"] [class$="price"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .amount{
+                font-size: $h1;
+                font-weight: bold;
+            }
+
+            .duration{
+                font-size: $body;
+                color: $color-dark-75;
+            }
+        }
+
+        [class ^= "sectionOne__cards--"] [class$="info"] {
+            color: $color-dark-75;
+        }
+
+        [class ^= "sectionOne__cards--"] [class$="features"] {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+
+            span{
+                
+                .bi-check2{
+                    color: $color-green-100;
+                }
+
+                .bi-x{
+                    color: rgb(237, 58, 58);
+                }
+            }
+        }
+
+        [class ^= "sectionOne__cards--"] [class$="btn"] {
+            justify-self: center;
+        }
+    } 
+}
+
+// Media queries for services page
+@media (max-width : $laptop){
+    .sectionOne__cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .sectionOne__content--title{
+        font-size: $h4;
+    }
+
+}
+
+@media (max-width : $tablet){
+    .sectionOne__cards{
+        grid-template-columns: repeat(1,0.7fr);
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width : $mobile){
+    .sectionOne__cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
