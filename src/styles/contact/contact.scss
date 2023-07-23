@@ -1,0 +1,73 @@
+@import '../designSystem/designSystem.scss';
+
+// Style rules for section one 
+
+.sectionOne{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    &__content--text{
+        font-size: $sub-heading;
+        font-family: $font-2;
+    }
+}
+
+.sectionTwo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+
+   form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        label{
+            font-size: $sub-heading;
+            font-family: $font-2;
+        }
+
+        input, 
+        textarea{
+            padding: 10px 20px;
+            border: 1.5px solid rgb(170, 168, 168);    
+            border-radius: 5px;
+            background-color: #eeeeee;
+            outline: none;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+    }
+}
+
+// Media queries for contact page
+
+@media (max-width : $desktop) {
+    .sectionOne__content--title{
+        font-size: $h2;
+        font-family: $font-1;
+    }    
+}
+
+@media (max-width : $laptop){
+
+    .sectionOne{
+        margin-top: 20px;
+    }
+    
+    .sectionTwo{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .sectionTwo__left{
+        order : 1;
+    }
+
+    .sectionTwo__right{
+        order: 0;
+    }
+}
