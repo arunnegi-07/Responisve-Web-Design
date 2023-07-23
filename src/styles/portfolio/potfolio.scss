@@ -1,0 +1,55 @@
+@import '../designSystem/designSystem.scss';
+
+// Style rules for section one 
+.sectionOne{
+    padding: 25px 0;
+    display: grid;
+    gap: 35px;
+
+    &__content--text{
+        font-size: $sub-heading;
+        font-family: $font-2;
+    }   
+
+    &__images{
+        display:  grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+
+        & img{
+            box-shadow: $shadow-1;
+            transform: scale(1);
+            transition: transform 0.2s ease;
+        }
+
+        & img:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__btn{
+        justify-self: center;
+    }
+}
+
+
+// media queries for portfolio page
+@media (max-width : $desktop){
+    .sectionOne__content--title{
+        font-size: $h2;
+    }   
+}
+
+@media (max-width : $laptop){
+    .sectionOne__content--title{
+        font-size: $h4;
+    }   
+}
+
+@media (max-width : $mobile){
+    .sectionOne__images{
+        display:  grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+}
