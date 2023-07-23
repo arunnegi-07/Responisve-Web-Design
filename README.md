@@ -1,5 +1,5 @@
 # Responsive Webiste Using HTML, SCSS and JS
-This responsive website is a part of a video lecture series by 'Joy Shaheb', an educational YouTuber. It serves as a repository containing my learning journey, showcasing a delightful and fully responsive website crafted with HTML, SCSS, and JS.
+This responsive website is a part of a video lecture series by 'Joy Shaheb', an educational YouTuber. This serves as a repository containing my learning journey, showcasing a delightful and fully responsive website crafted with HTML, SCSS, and JS.
 
 ### Getting Started:<br>
 Follow these instructions to get a copy of the project up and running on your local machine.
