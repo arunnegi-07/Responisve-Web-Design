@@ -41,6 +41,6 @@ This project was inspired by the web development tutorials by <a href="https://w
     <img src="https://i.ibb.co/sH4y29p/Small-screens.png" alt="Small-screen-view" border="1px solid black;">
 </p>
 
-- [See Website live 🚀](https://arunnegi-07.github.io/Responisve-Web-Design/) (right-click and choose "Open link in a new tab")
+- [See Website live 🚀](https://arunnegi-07.github.io/Responsive-Web-Design/) (right-click and choose "Open link in a new tab")
 
 
